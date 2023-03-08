@@ -21,7 +21,7 @@ namespace AbraTaskAPI.Controllers
         }
 
         [HttpGet]
-        [Route("{gender:string}")]
+        [Route("{gender}")]
         public async Task<IActionResult> GetRegionAsync(string i_Gender)
         {
             var users = await r_usersRepository.GetAsync(i_Gender);
